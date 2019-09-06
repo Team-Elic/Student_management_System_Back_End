@@ -52,6 +52,7 @@ function getPaginatedList(req, res, next) {
     else res.json(result);
   });
 }
+//
 function getById(req, res, next) {
   courseSubjectService.getById(req.params.id, function(err, result) {
     if (err) next(err);
